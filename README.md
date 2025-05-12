@@ -27,9 +27,11 @@ Before getting started, make sure you have the following installed:
 
 - **Node.js** (version 14 or higher)
 - **npm** (version 7 or higher)
-- **Truffle** globally installed:  
-  ```bash
+- **Truffle** globally installed:
+  
+  ``bash
   npm install -g truffle
+  ``
 
 **A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).**
 
@@ -64,10 +66,9 @@ After the installation is complete, you can start the Next.js frontend developme
 
 ```bash
 npm run dev
-```
 Your application will be available at http://localhost:3000.
-
-Testing the Contract
+```
+## 5. Testing the Contract
 
 To ensure the functionality of the contract, tests have been written using Truffle. These tests cover the basic operations of the contract, such as creating campaigns and contributing to them.
 Running Tests
@@ -76,26 +77,27 @@ You can run the tests using the following command:
 ```bash
 truffle test
 Sample Test File: ethereum/test/campaign.test.js
+
 ```
 
 The tests include basic functionality like:
 
-**Deploying the contract**
+**Tests which are Useful to understanding if the contract is working exactly as we want it to.*
+**Functions are working perfectly .**
 
-**Creating a campaign**
 
-**Contributing to a campaign**
-
-Deploying the Smart Contract
+## 6. Deploying the Smart Contract
 1. Update deploy.js with Your Wallet Details
    
 In the ethereum/deploy.js file, replace the placeholders with your own wallet mnemonic and Infura project ID:
+
 ```bash
 const provider = new HDWalletProvider(
   'your wallet mnemonic here',
   'https://sepolia.infura.io/v3/your-infura-project-id' 
 );
 ```
+
 2. Running the Deployment Script
 Once you've set up your wallet details, you can deploy the smart contract by running:
 
@@ -106,9 +108,10 @@ Example Output:
 Attempting to deploy from account 0x1234567890abcdef1234567890abcdef12345678
 Contract deployed to: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef
 ```
+
 This will deploy the smart contract to the Sepolia testnet and display the contract address once the deployment is successful.
 
-Project Directory Structure
+## 7. Project Directory Structure
 To help you navigate the project, here’s the folder structure:
 
 ```bash
@@ -146,16 +149,16 @@ kickstart/
 ├── README.md                          # Project overview and instructions
 └── truffle-config.js                  # Truffle configuration for deploying contracts
 ```
-## Frontend Routing and UI
+## 8. Frontend Routing and UI
 The frontend is built with Next.js and Semantic UI React for easy routing and modern UI components. Here’s a brief overview of how the frontend is structured:
 
-# Pages: All the frontend pages are stored inside the pages directory. Each page corresponds to a route in the Next.js app (e.g., index.js for the homepage and campaign.js for campaign management).
+Pages: All the frontend pages are stored inside the pages directory. Each page corresponds to a route in the Next.js app (e.g., index.js for the homepage and campaign.js for campaign management).
 
-# Components: Reusable UI components (e.g., buttons, forms) are located in the components directory.
+Components: Reusable UI components (e.g., buttons, forms) are located in the components directory.
 
-# Routing: Next.js handles routing automatically based on file names inside the pages directory. Dynamic routes can be handled through routes.js.
+Routing: Next.js handles routing automatically based on file names inside the pages directory. Dynamic routes can be handled through routes.js.
 
-## Troubleshooting
+## 9. Troubleshooting
 If you encounter any issues:
 
 **Double-check your wallet mnemonic and Infura project ID.**
@@ -166,5 +169,6 @@ If you encounter any issues:
 
 **Ensure the server is running for frontend to fetch data from the contract.**
 
-## License
-# This project is open-source and available under the MIT License.
+## 10. License
+
+This project is open-source and available under the MIT License.
