@@ -4,7 +4,7 @@ Kickstart is a decentralized smart contract that enables users to create and man
  
 ## Overview  
  
-This project demonstrates how to: 
+This project demonstrates how to:  
  
 - Deploy a smart contract to the Sepolia testnet .
 - Compile the smart contract using Truffle .
