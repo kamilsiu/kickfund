@@ -29,9 +29,9 @@ Before getting started, make sure you have the following installed:
 - **npm** (version 7 or higher)
 - **Truffle** globally installed:
   
-  ``bash
+  ```bash
   npm install -g truffle
-  ``
+  ```
 
 **A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).**
 
