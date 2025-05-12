@@ -4,7 +4,7 @@ Kickstart is a decentralized smart contract that enables users to create and man
 
  
 ## Overview  
-
+ 
   
 This project demonstrates how to:  
  
