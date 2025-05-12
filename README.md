@@ -39,9 +39,7 @@ npm (version 7 or higher)
 Truffle globally installed:
 
 ``bash
-
 npm install -g truffle
-
 ``
 A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).
 
@@ -52,25 +50,22 @@ Some Sepolia testnet ETH for deploying the contract (use faucets like Sepolia fa
 ## 1. Clone the Repository
 Start by cloning this repository to your local machine:
 
-## bash
+``bash
 git clone https://github.com/your-username/kickstart.git
 cd kickstart
+``
 ## 2. Install Backend Dependencies
 Inside the project directory, install all the required npm packages for the backend (Truffle and Web3):
 
 ``bash
-
 npm install
-
 ``
 ## 3. Install Frontend Dependencies
 Now, let's set up the frontend using Next.js and Semantic UI React:
 
 ``bash
-
 cd frontend
 npm install
-
 ``
 ## 4. Start the Frontend Development Server
 
@@ -78,7 +73,8 @@ After the installation is complete, you can start the Next.js frontend developme
 
 ``bash
 npm run dev
-``Your application will be available at http://localhost:3000.
+``
+Your application will be available at http://localhost:3000.
 
 Testing the Contract
 To ensure the functionality of the contract, tests have been written using Truffle. These tests cover the basic operations of the contract, such as creating campaigns and contributing to them.
