@@ -2,8 +2,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory  = require('../build/CampaignFactory.json');
 const provider = new HDWalletProvider(
-'YOUR MNEMONIC KEY',
-  'https://sepolia.infura.io/v3/YOUR_SEPOLIA_PROJECT'
+  'your wallet mnemonic here',
+  'https://sepolia.infura.io/v3/your-infura-project-id' 
 );
 const web3 = new Web3(provider);
 
