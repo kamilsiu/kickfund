@@ -147,7 +147,7 @@ kickstart/
 ├── server.js                      # Custom server configuration (if needed)
 ├── package.json                       # Root package dependencies and scripts
 ├── README.md                          # Project overview and instructions
-└── truffle-config.js                  # Truffle configuration for deploying contracts
+└── truffle-config.js                  # Truffle configuration for deploying contracts 
 ```
 ## 8. Frontend Routing and UI
 The frontend is built with Next.js and Semantic UI React for easy routing and modern UI components. Here’s a brief overview of how the frontend is structured:
