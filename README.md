@@ -48,9 +48,9 @@ cd kickstart
 ## 2. Install Backend Dependencies
 Inside the project directory, install all the required npm packages for the backend (Truffle and Web3):
 
-``bash
+```bash
 npm install
-``
+```
 ## 3. Install Frontend Dependencies
 Now, let's set up the frontend using Next.js and Semantic UI React:
 
@@ -62,107 +62,109 @@ npm install
 
 After the installation is complete, you can start the Next.js frontend development server:
 
-``bash
+```bash
 npm run dev
-``
+```
 Your application will be available at http://localhost:3000.
 
 Testing the Contract
-To ensure the functionality of the contract, tests have been written using Truffle. These tests cover the basic operations of the contract, such as creating campaigns and contributing to them.
 
+To ensure the functionality of the contract, tests have been written using Truffle. These tests cover the basic operations of the contract, such as creating campaigns and contributing to them.
 Running Tests
 You can run the tests using the following command:
 
-bash
-Copy
-Edit
+```bash
 truffle test
 Sample Test File: ethereum/test/campaign.test.js
+```
 
 The tests include basic functionality like:
 
-Deploying the contract
+**Deploying the contract**
 
-Creating a campaign
+**Creating a campaign**
 
-Contributing to a campaign
+**Contributing to a campaign**
 
 Deploying the Smart Contract
 1. Update deploy.js with Your Wallet Details
+   
 In the ethereum/deploy.js file, replace the placeholders with your own wallet mnemonic and Infura project ID:
-
-javascript
-Copy
-Edit
+```bash
 const provider = new HDWalletProvider(
   'your wallet mnemonic here',
   'https://sepolia.infura.io/v3/your-infura-project-id' 
 );
+```
 2. Running the Deployment Script
 Once you've set up your wallet details, you can deploy the smart contract by running:
 
-bash
-Copy
-Edit
+```bash
+
 node ethereum/deploy.js
 Example Output:
-
-bash
-Copy
-Edit
 Attempting to deploy from account 0x1234567890abcdef1234567890abcdef12345678
 Contract deployed to: 0xabcdefabcdefabcdefabcdefabcdefabcdefabcdef
+```
 This will deploy the smart contract to the Sepolia testnet and display the contract address once the deployment is successful.
 
 Project Directory Structure
 To help you navigate the project, here’s the folder structure:
 
-bash
-Copy
-Edit
+```bash
+
 kickstart/
+│   ├── components/     # Reusable components (UI elements)
+│   ├── ContributeForm.json
+│   ├── Header.js
+│   ├── Layout.js
+│   ├── RequestRow.js
+├── test/
+│     ├── Campaign.test.js             # Tests for the smart contract
 ├── ethereum/
 │   ├── contracts/
 │     ├── Campaign.sol
 │   ├── deploy.js
-│   ├── compile.js             # Deployment script for smart contracts
-├── frontend/                          # Frontend with Next.js and Semantic UI React
-│   ├── components/                    # Reusable components (UI elements)
-│   ├── pages/                         # Pages and routes for Next.js (automatic routing)
-│   │   ├── index.js                   # Main page for the app
-│   │   ├── campaign.js                # Campaign management page
-│   ├── public/                        # Static assets (images, fonts, etc.)
-│   ├── package.json                   # Frontend dependencies
-│   ├── next.config.js                 # Next.js configuration file
-│   └── README.md                      # Frontend overview and instructions
-├── node_modules/                      # Installed dependencies via npm
-├── routes.js                          # All routes for the app (use Next.js dynamic routing)
-├── server.js                          # Custom server configuration (if needed)
-├── .gitignore                         # Git ignore file
-├── test/
-│     ├── Campaign.test.js             # Tests for the smart contract
+│   ├── compile.js
+│   ├── web3.js
+│   ├── campaign.js
+│   ├── factory.js
+│   ├── pages/                # Pages and routes for Next.js (automatic routing)
+│     ├── new.js
+│     ├── show.js
+│     ├── campaign /
+│       ├── requests /
+│       ├── index.js
+│       ├── new.js
+│   ├── index.js                                
+├── package.json                   # Frontend dependencies
+│── next.config.js                 # Next.js configuration file               
+├── node_modules/                  # Installed dependencies via npm
+├── routes.js                      # All routes for the app (use Next.js dynamic routing)
+├── server.js                      # Custom server configuration (if needed)
 ├── package.json                       # Root package dependencies and scripts
 ├── README.md                          # Project overview and instructions
 └── truffle-config.js                  # Truffle configuration for deploying contracts
-Frontend Routing and UI
+```
+## Frontend Routing and UI
 The frontend is built with Next.js and Semantic UI React for easy routing and modern UI components. Here’s a brief overview of how the frontend is structured:
 
-Pages: All the frontend pages are stored inside the pages directory. Each page corresponds to a route in the Next.js app (e.g., index.js for the homepage and campaign.js for campaign management).
+# Pages: All the frontend pages are stored inside the pages directory. Each page corresponds to a route in the Next.js app (e.g., index.js for the homepage and campaign.js for campaign management).
 
-Components: Reusable UI components (e.g., buttons, forms) are located in the components directory.
+# Components: Reusable UI components (e.g., buttons, forms) are located in the components directory.
 
-Routing: Next.js handles routing automatically based on file names inside the pages directory. Dynamic routes can be handled through routes.js.
+# Routing: Next.js handles routing automatically based on file names inside the pages directory. Dynamic routes can be handled through routes.js.
 
-Troubleshooting
+## Troubleshooting
 If you encounter any issues:
 
-Double-check your wallet mnemonic and Infura project ID.
+**Double-check your wallet mnemonic and Infura project ID.**
 
-Ensure you have Sepolia ETH from a faucet for contract deployment.
+**Ensure you have Sepolia ETH from a faucet for contract deployment.**
 
-Verify the Infura endpoint for Sepolia.
+**Verify the Infura endpoint for Sepolia.**
 
-Ensure the server is running for frontend to fetch data from the contract.
+**Ensure the server is running for frontend to fetch data from the contract.**
 
-License
-This project is open-source and available under the MIT License.
+## License
+# This project is open-source and available under the MIT License.
