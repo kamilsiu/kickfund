@@ -5,6 +5,6 @@ if(!web3){
 }
 const instance = new web3.eth.Contract(
     JSON.parse(CampaignFactory.interface),
-    '0xa8BBa2cE15525DB8f1E7E0DC69Ebede3CcA0B1f6'
+    'YOUR__DEPLOYED__ADDRESS'
 )
 export default instance;
