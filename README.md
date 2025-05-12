@@ -34,6 +34,7 @@ Before getting started, make sure you have the following installed:
   ```bash
   npm install -g truffle
   ```
+  
 
 **A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).**
 
