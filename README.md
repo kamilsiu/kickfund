@@ -31,19 +31,20 @@ Before getting started, make sure you have the following installed:
   ```bash
   npm install -g truffle
 
-A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).
+**A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).**
 
-Some Sepolia testnet ETH for deploying the contract (use faucets like Sepolia faucet).
+**Some Sepolia testnet ETH for deploying the contract (use faucets like Sepolia faucet).**
 
 ## Setup
 
 ## 1. Clone the Repository
 Start by cloning this repository to your local machine:
 
-``bash
+```bash
 git clone https://github.com/your-username/kickstart.git
 cd kickstart
-``
+
+```
 ## 2. Install Backend Dependencies
 Inside the project directory, install all the required npm packages for the backend (Truffle and Web3):
 
