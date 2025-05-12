@@ -2,8 +2,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory  = require('../build/CampaignFactory.json');
 const provider = new HDWalletProvider(
-'blue pitch swift tool tennis ten catalog orchard aim mouse spy penalty',
-  'https://sepolia.infura.io/v3/2ff4959de1694f42b96a7547de988be1'
+'YOUR MNEMONIC KEY',
+  'https://sepolia.infura.io/v3/YOUR_SEPOLIA_PROJCET'
 );
 const web3 = new Web3(provider);
 
