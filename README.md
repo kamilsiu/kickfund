@@ -13,7 +13,7 @@ This project demonstrates how to:
 
 ## Technologies Used
 
-- **Web3.js** – Library to interact with the Ethereum blockchain
+- **Web3.js** – Library to interact with the Ethereum blockchain .
 - **HDWalletProvider** – Securely manage private keys and connect to Ethereum nodes
 - **Solidity** – Programming language for smart contracts
 - **Truffle** – Development framework for compiling, testing, and deploying contracts
