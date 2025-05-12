@@ -9,7 +9,7 @@ This project demonstrates how to:
 - Deploy a smart contract to the Sepolia testnet .
 - Compile the smart contract using Truffle .
 - Run tests to verify the contract’s functionality (optional but recommended) .
-- Build the frontend using **Next.js** and **Semantic UI React** for user interaction with the smart contract
+- Build the frontend using **Next.js** and **Semantic UI React** for user interaction with the smart contract .
 
 ## Technologies Used
 
