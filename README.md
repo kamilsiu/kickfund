@@ -56,10 +56,10 @@ npm install
 ## 3. Install Frontend Dependencies
 Now, let's set up the frontend using Next.js and Semantic UI React:
 
-``bash
+```bash
 cd frontend
 npm install
-``
+```
 ## 4. Start the Frontend Development Server
 
 After the installation is complete, you can start the Next.js frontend development server:
