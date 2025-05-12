@@ -25,7 +25,7 @@ This project demonstrates how to:
 
 Before getting started, make sure you have the following installed:
 
-- **Node.js** (version 14 or higher)
+- **Node.js** (version 14 or higher) 
 - **npm** (version 7 or higher)
 - **Truffle** globally installed:
   
