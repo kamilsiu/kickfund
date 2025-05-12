@@ -1,46 +1,36 @@
-## Kickstart – Decentralized Campaign Management
+# Kickstart – Decentralized Campaign Management
 
-Kickstart is a decentralized smart contract that enables users to create and manage fundraising campaigns on the Ethereum blockchain. This project demonstrates the process of compiling, deploying, and testing a smart contract on the Sepolia testnet. The frontend is built using Next.js with Semantic UI React for styling and routing, allowing users to interact with the deployed contract.
-
+Kickstart is a decentralized smart contract that enables users to create and manage fundraising campaigns on the Ethereum blockchain. This project demonstrates the process of compiling, deploying, and testing a smart contract on the Sepolia testnet. The frontend is built using **Next.js** with **Semantic UI React** for styling and routing, allowing users to interact with the deployed contract.
 
 ## Overview
+
 This project demonstrates how to:
 
-Deploy a smart contract to the Sepolia testnet
+- Deploy a smart contract to the Sepolia testnet
+- Compile the smart contract using Truffle
+- Run tests to verify the contract’s functionality (optional but recommended)
+- Build the frontend using **Next.js** and **Semantic UI React** for user interaction with the smart contract
 
-Compile the smart contract using Truffle
+## Technologies Used
 
-Run tests to verify the contract’s functionality (optional but recommended)
-
-Build the frontend using Next.js and Semantic UI React for user interaction with the smart contract
-
-Technologies Used
-Web3.js – Library to interact with the Ethereum blockchain
-
-HDWalletProvider – Securely manage private keys and connect to Ethereum nodes
-
-Solidity – Programming language for smart contracts
-
-Truffle – Development framework for compiling, testing, and deploying contracts
-
-Infura – Provides access to the Ethereum network without running a full node
-
-Next.js – React framework for building the frontend and routing
-
-Semantic UI React – React component library for UI elements
+- **Web3.js** – Library to interact with the Ethereum blockchain
+- **HDWalletProvider** – Securely manage private keys and connect to Ethereum nodes
+- **Solidity** – Programming language for smart contracts
+- **Truffle** – Development framework for compiling, testing, and deploying contracts
+- **Infura** – Provides access to the Ethereum network without running a full node
+- **Next.js** – React framework for building the frontend and routing
+- **Semantic UI React** – React component library for UI elements
 
 ## Prerequisites
+
 Before getting started, make sure you have the following installed:
 
-Node.js (version 14 or higher)
-
-npm (version 7 or higher)
-
-Truffle globally installed:
-
-``
-npm install -g truffle
-``
+- **Node.js** (version 14 or higher)
+- **npm** (version 7 or higher)
+- **Truffle** globally installed:  
+  ```bash
+  npm install -g truffle
+```
 A Sepolia testnet wallet address (you can get one from MetaMask or similar wallet).
 
 Some Sepolia testnet ETH for deploying the contract (use faucets like Sepolia faucet).
