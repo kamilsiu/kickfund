@@ -15,7 +15,7 @@ This project demonstrates how to:
 
 - **Web3.js** – Library to interact with the Ethereum blockchain .
 - **HDWalletProvider** – Securely manage private keys and connect to Ethereum nodes .
-- **Solidity** – Programming language for smart contracts
+- **Solidity** – Programming language for smart contracts .
 - **Truffle** – Development framework for compiling, testing, and deploying contracts
 - **Infura** – Provides access to the Ethereum network without running a full node
 - **Next.js** – React framework for building the frontend and routing
