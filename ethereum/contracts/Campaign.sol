@@ -1,10 +1,9 @@
 pragma solidity ^0.4.26;
 
 /**
- * @title A sample Raffle contract
- * @author Kamil Kabiri
- * @notice This contract is for creating sample raffle contract
- * @dev Implements ChainLink VRFv2.5
+ * @title A KickFund Project
+ * @author Kamil Nissar
+ * @notice This contract is for creating creating Campaigns and Funding Projects
  */
 
 contract CampaignFactory {
