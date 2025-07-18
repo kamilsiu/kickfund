@@ -1,5 +1,12 @@
 pragma solidity ^0.4.26;
 
+/**
+ * @title A sample Raffle contract
+ * @author Kamil Kabiri
+ * @notice This contract is for creating sample raffle contract
+ * @dev Implements ChainLink VRFv2.5
+ */
+
 contract CampaignFactory {
     address[] public deployedCampaigns;
 
